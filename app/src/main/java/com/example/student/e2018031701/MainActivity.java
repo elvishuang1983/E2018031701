@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
             Location loc101 = new Location("myLoc");
             loc101.setLatitude(25.0339639);
             loc101.setLongitude(121.5644722);
+
             //從所在位置到101的直線距離-->distanceTo
             double distance = loc101.distanceTo(location);
             Log.d("LOC","distance to 101 = "+ distance);
