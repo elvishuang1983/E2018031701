@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
             //從所在位置到101的直線距離-->distanceTo
             double distance = loc101.distanceTo(location);
             Log.d("LOC","distance to 101 = "+ distance);
+
+            //下面是輸入經緯度位置導出實際地址
             Geocoder geocoder = new Geocoder(MainActivity.this);
             try {
                 List<Address> list = geocoder.getFromLocation(25.024439,121.457815,1);
